@@ -1,12 +1,12 @@
 package com.marcuseisele.javarandom;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
-public class MainRandom {
+public class MainSecureRandom {
 
     public static void main(String[] args) {
         //Initialize the random object
-        Random random = new Random();
+        SecureRandom random = new SecureRandom();
 
         //Generate numbers between 0 and 100
         int firstRandomValue = random.nextInt(101);
